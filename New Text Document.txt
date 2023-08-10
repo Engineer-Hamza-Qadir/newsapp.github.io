@@ -1,0 +1,20 @@
+From Muhammad Umar Farooq to Everyone 01:10 PM
+useEffect(() => {
+  // declare the async data fetching function
+  const fetchData = async () => {
+    // get the data from the api
+    const data = await fetch('https://yourapi.com');
+    // convert the data to json
+    const json = await response.json();
+
+    // set state with the result
+    setData(json);
+  }
+
+  // call the function
+  fetchData()
+    // make sure to catch any error
+    .catch(console.error);;
+}, [])
+· · ·
+https://devtrium.com/posts/async-functions-useeffect
